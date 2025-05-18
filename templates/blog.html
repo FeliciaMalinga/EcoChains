@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoChain Blog</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="EcoChain Logo" class="logo-img">
+                <span class="logo-text">EcoChain</span>
+            </div>
+            <nav class="main-nav">
+                <a href="/" >Home</a>
+                <a href="/services">Services</a>
+                <a href="/case_studies">Case Studies</a>
+                <a href="/blog" class="active">Blog</a>
+                <a href="/demos">Demos</a>
+                <a href="/about">About</a>
+            </nav>
+            <a href="/get_a_quote" class="quote-btn">Get A Quote</a>
+        </div>
+    </header>
+    <main>
+        <section class="blog-section">
+            <h1>Industry Insights</h1>
+            <div class="stack-cards">
+                <div class="stack-card">
+                    <h2>Warehousing for Southern Africa: Challenges & Trends</h2>
+                    <p class="blog-summary">Warehousing in Southern Africa faces unique challenges, including infrastructure gaps, regulatory hurdles, and the need for climate-resilient solutions. Trends show a shift toward automation, green warehousing, and digital supply chain management. <a href="#">Read More</a></p>
+                </div>
+                <div class="stack-card">
+                    <h2>Logistics Trends in 2025</h2>
+                    <p class="blog-summary">The logistics industry is rapidly evolving with AI, IoT, and blockchain integration. Companies like Reload Logistics are leading the way in transparency and efficiency. <a href="#">Read More</a></p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="#">GitHub</a>
+        <a href="#">Documentation</a>
+        <a href="#">Contact Us</a>
+        <div class="contact-details" style="margin-top:10px; font-size:1rem; color:#3aaf4c;">
+            <div>Email: <a href="mailto:ecochain@gmail.com">ecochain@gmail.com</a></div>
+            <div>Phone: 011 987 4321</div>
+            <div>Offices: currently unavailable</div>
+        </div>
+        <div class="social-icons">
+            <!-- Social media icons here -->
+        </div>
+        <p>&copy; 2025 EcoChain. All rights reserved.</p>
+    </footer>
+</body>
+</html> 

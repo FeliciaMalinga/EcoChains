@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoChain Case Studies</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="EcoChain Logo" class="logo-img">
+                <span class="logo-text">EcoChain</span>
+            </div>
+            <nav class="main-nav">
+                <a href="/">Home</a>
+                <a href="/services">Services</a>
+                <a href="/case_studies" class="active">Case Studies</a>
+                <a href="/blog">Blog</a>
+                <a href="/demos">Demos</a>
+                <a href="/about">About</a>
+            </nav>
+            <a href="/get_a_quote" class="quote-btn">Get A Quote</a>
+        </div>
+    </header>
+    <main>
+        <section class="case-studies-section">
+            <h1>Success Stories</h1>
+            <div class="stack-cards">
+                <div class="stack-card">
+                    <h2>How EcoChain Reduced Energy Waste in Cold Storage Facilities</h2>
+                    <p><strong>Challenge:</strong> High energy consumption and waste in traditional cold storage logistics.</p>
+                    <p><strong>Solution:</strong> EcoChain implemented IoT sensors and AI-driven optimization for temperature control and energy management.</p>
+                    <ul>
+                        <li><strong>Results:</strong></li>
+                        <li>Energy waste reduced by 28% in the first year</li>
+                        <li>Operational costs lowered by 15%</li>
+                        <li>Improved product safety and compliance</li>
+                    </ul>
+                    <blockquote>“EcoChain's technology helped us save on energy costs and made our supply chain more sustainable.”<br>— Logistics Manager, ColdStore Africa</blockquote>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="#">GitHub</a>
+        <a href="#">Documentation</a>
+        <a href="#">Contact Us</a>
+        <div class="contact-details" style="margin-top:10px; font-size:1rem; color:#3aaf4c;">
+            <div>Email: <a href="mailto:ecochain@gmail.com">ecochain@gmail.com</a></div>
+            <div>Phone: 011 987 4321</div>
+            <div>Offices: currently unavailable</div>
+        </div>
+        <div class="social-icons">
+            <!-- Social media icons here -->
+        </div>
+        <p>&copy; 2025 EcoChain. All rights reserved.</p>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoChain Services</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="EcoChain Logo" class="logo-img">
+                <span class="logo-text">EcoChain</span>
+            </div>
+            <nav class="main-nav">
+                <a href="/">Home</a>
+                <a href="/services" class="active">Services</a>
+                <a href="/case_studies">Case Studies</a>
+                <a href="/blog">Blog</a>
+                <a href="/demos">Demos</a>
+                <a href="/about">About</a>
+            </nav>
+            <a href="/get_a_quote" class="quote-btn">Get A Quote</a>
+        </div>
+    </header>
+    <main>
+        <section class="services-section">
+            <h1>What EcoChain Offers</h1>
+            <div class="stack-cards">
+                <div class="stack-card">
+                    <i>🚚</i>
+                    <strong>Eco-Friendly Transportation</strong>
+                    <p>Implementing green transport practices to reduce emissions.</p>
+                </div>
+                <div class="stack-card">
+                    <i>🧠</i>
+                    <strong>Smart Logistics Optimization</strong>
+                    <p>AI-driven routing to save fuel and time.</p>
+                </div>
+                <div class="stack-card">
+                    <i>🔗</i>
+                    <strong>Real-Time Supply Chain Tracking</strong>
+                    <p>Blockchain and IoT monitoring for transparency.</p>
+                </div>
+                <div class="stack-card">
+                    <i>🏭</i>
+                    <strong>Energy-Efficient Warehousing</strong>
+                    <p>Optimized temperature control and resource management.</p>
+                </div>
+                <div class="stack-card">
+                    <i>🛡️</i>
+                    <strong>Risk Management &amp; Security</strong>
+                    <p>Theft prevention, advanced fire detection, and geofencing alerts.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="#">GitHub</a>
+        <a href="#">Documentation</a>
+        <a href="#">Contact Us</a>
+        <div class="contact-details" style="margin-top:10px; font-size:1rem; color:#3aaf4c;">
+            <div>Email: <a href="mailto:ecochain@gmail.com">ecochain@gmail.com</a></div>
+            <div>Phone: 011 987 4321</div>
+            <div>Offices: currently unavailable</div>
+        </div>
+        <div class="social-icons">
+            <!-- Social media icons here -->
+        </div>
+        <p>&copy; 2025 EcoChain. All rights reserved.</p>
+    </footer>
+</body>
+</html> 

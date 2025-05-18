@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get A Quote - EcoChain</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="EcoChain Logo" class="logo-img">
+                <span class="logo-text">EcoChain</span>
+            </div>
+            <nav class="main-nav">
+                <a href="/">Home</a>
+                <a href="/services">Services</a>
+                <a href="/case_studies">Case Studies</a>
+                <a href="/blog">Blog</a>
+                <a href="/demos">Demos</a>
+                <a href="/about">About</a>
+            </nav>
+            <a href="/get_a_quote" class="quote-btn active">Get A Quote</a>
+        </div>
+    </header>
+    <main>
+        <section class="quote-section">
+            <h2>Request a Quote</h2>
+            <form>
+                <input type="text" placeholder="Your Name" required>
+                <input type="email" placeholder="Your Email" required>
+                <input type="text" placeholder="Company Name" required>
+                <textarea placeholder="How can we help you?" required></textarea>
+                <button type="submit">Submit</button>
+            </form>
+            <div class="privacy-note">
+                <strong>Privacy Notice:</strong> Your information will only be used to respond to your inquiry. We respect your privacy and do not share your data with third parties.
+            </div>
+        </section>
+        <section class="packages-section">
+            <h2>Packages</h2>
+            <div class="packages-grid">
+                <div class="package-card">
+                    <h3>Basic</h3>
+                    <p class="price">R1,500 ZAR</p>
+                    <ul>
+                        <li>Entry-level logistics support</li>
+                        <li>Email support</li>
+                        <li>Monthly reporting</li>
+                    </ul>
+                    <button class="get-quote-btn">Get a Quote</button>
+                </div>
+                <div class="package-card">
+                    <h3>Standard</h3>
+                    <p class="price">R3,500 ZAR</p>
+                    <ul>
+                        <li>All Basic features</li>
+                        <li>Priority support</li>
+                        <li>Weekly reporting</li>
+                        <li>Smart logistics optimization</li>
+                    </ul>
+                    <button class="get-quote-btn">Get a Quote</button>
+                </div>
+                <div class="package-card">
+                    <h3>Premium</h3>
+                    <p class="price">R7,000 ZAR</p>
+                    <ul>
+                        <li>All Standard features</li>
+                        <li>Dedicated account manager</li>
+                        <li>Real-time supply chain tracking</li>
+                        <li>Custom integrations</li>
+                    </ul>
+                    <button class="get-quote-btn">Get a Quote</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="footer-links">
+            <a href="#">GitHub</a>
+            <a href="#">Documentation</a>
+            <a href="#">Contact Us</a>
+            <a href="#">Code of Ethics</a>
+        </div>
+        <div class="social-icons">
+            <!-- Social media icons here -->
+        </div>
+        <p>&copy; 2025 EcoChain. All rights reserved.</p>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoChain - Wallet</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="EcoChain Logo" class="logo-img">
+                <span class="logo-text">EcoChain</span>
+            </div>
+            <nav class="main-nav">
+                <a href="/">Home</a>
+                <a href="/wallet" class="active">Wallet</a>
+                <a href="/transactions">Transactions</a>
+                <a href="/smart_contracts">Smart Contracts</a>
+                <a href="/api_integrations">API Integrations</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="wallet">
+            <h2>Wallet Management</h2>
+            <p>Connected Wallet: MetaMask</p>
+            <p>Balance: <span id="balance">0 ETH</span></p>
+            <p>Address: <span id="address">0x...</span></p>
+            <button>Send</button>
+            <button>Receive</button>
+        </section>
+    </main>
+    <footer>
+        <a href="#">GitHub</a>
+        <a href="#">Documentation</a>
+        <a href="#">Contact Us</a>
+    </footer>
+</body>
+</html> 

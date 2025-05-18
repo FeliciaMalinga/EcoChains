@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoChain - Business Website</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="EcoChain Logo" class="logo-img">
+                <span class="logo-text">EcoChain</span>
+            </div>
+            <nav class="main-nav">
+                <a href="/" class="active">Home</a>
+                <a href="/services">Services</a>
+                <a href="/case_studies">Case Studies</a>
+                <a href="/blog">Blog</a>
+                <a href="/demos">Demos</a>
+                <a href="/about">About</a>
+            </nav>
+            <a href="/get_a_quote" class="quote-btn">Get A Quote</a>
+        </div>
+    </header>
+    <main>
+        <section class="hero-section">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <h1>EcoChain empowers businesses with cutting-edge logistics solutions, ensuring efficiency, security, and sustainability in every supply chain operation.</h1>
+                <a href="/about" class="cta-main">Learn More</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="#">GitHub</a>
+        <a href="#">Documentation</a>
+        <a href="#">Contact Us</a>
+        <div class="social-icons">
+            <!-- Social media icons here -->
+        </div>
+        <p>&copy; 2025 EcoChain. All rights reserved.</p>
+    </footer>
+</body>
+</html> 

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - EcoChain</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <style>
+        .about-header {
+            background: url('https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=1200&q=80') center/cover no-repeat;
+            color: #fff;
+            padding: 60px 0 40px 0;
+            text-align: center;
+        }
+        .about-header h1 { font-size: 2.5rem; margin-bottom: 10px; }
+        .about-header p { font-size: 1.2rem; font-weight: 500; }
+        .about-section { max-width: 1100px; margin: 40px auto; padding: 0 16px; }
+        .about-split { display: flex; flex-wrap: wrap; gap: 32px; align-items: center; }
+        .about-split .about-desc { flex: 1 1 320px; }
+        .about-split .about-img { flex: 1 1 320px; text-align: center; }
+        .about-split img { max-width: 100%; border-radius: 10px; }
+        .about-vm { background: #f4f8f4; border-radius: 10px; padding: 32px 24px; margin: 32px 0; }
+        .about-vm h2 { margin-top: 0; }
+        .about-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 24px; margin: 32px 0; }
+        .about-list .about-feature { background: #f8faf8; border-radius: 8px; padding: 20px; text-align: center; }
+        .about-list .about-feature i { font-size: 2rem; color: #3aaf4c; margin-bottom: 10px; display: block; }
+        .about-why { background: #eaf7ea; border-radius: 10px; padding: 32px 24px; margin: 32px 0; }
+        .about-why h2 { margin-top: 0; }
+        .about-why ul { list-style: none; padding: 0; }
+        .about-why li { margin-bottom: 12px; font-weight: 500; }
+        @media (max-width: 800px) {
+            .about-split { flex-direction: column; }
+        }
+    </style>
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="EcoChain Logo" class="logo-img">
+                <span class="logo-text">EcoChain</span>
+            </div>
+            <nav class="main-nav">
+                <a href="/">Home</a>
+                <a href="/services">Services</a>
+                <a href="/case_studies">Case Studies</a>
+                <a href="/blog">Blog</a>
+                <a href="/demos">Demos</a>
+                <a href="/about" class="active">About</a>
+            </nav>
+            <a href="#quote" class="quote-btn">Get A Quote</a>
+        </div>
+    </header>
+    <header class="about-header">
+        <h1>EcoChain</h1>
+        <p>Transforming Logistics Through Technology &amp; Sustainability</p>
+    </header>
+    <section class="about-section">
+        <div class="about-split">
+            <div class="about-desc">
+                <h2>Who We Are</h2>
+                <p>EcoChain helps businesses optimize logistics through advanced technologies and eco-friendly transport solutions, ensuring efficiency, security, and transparency.</p>
+            </div>
+            <div class="about-img">
+                <img src="https://images.unsplash.com/photo-1464983953574-0892a716854b?auto=format&fit=crop&w=600&q=80" alt="Smart Logistics Illustration">
+            </div>
+        </div>
+        <div class="about-vm">
+            <h2>Our Vision &amp; Mission</h2>
+            <p><strong>Vision:</strong> To transform logistics through cutting-edge technology and sustainable practices—creating a smarter, greener, and more efficient supply chain.</p>
+            <p><strong>Mission:</strong> EcoChain assists companies in implementing innovative logistics solutions that minimize carbon footprints, optimize transportation efficiency, and secure supply chains.</p>
+        </div>
+        <h2>What We Do</h2>
+        <div class="about-list">
+            <div class="about-feature">
+                <i>🚚</i>
+                <strong>Eco-Friendly Transportation</strong>
+                <p>Green transport practices to reduce emissions.</p>
+            </div>
+            <div class="about-feature">
+                <i>🧠</i>
+                <strong>Smart Logistics Optimization</strong>
+                <p>AI-driven routing to save fuel and time.</p>
+            </div>
+            <div class="about-feature">
+                <i>🔗</i>
+                <strong>Real-Time Supply Chain Tracking</strong>
+                <p>Blockchain and IoT monitoring for transparency.</p>
+            </div>
+            <div class="about-feature">
+                <i>🏭</i>
+                <strong>Energy-Efficient Warehousing</strong>
+                <p>Optimized temperature control and resource management.</p>
+            </div>
+            <div class="about-feature">
+                <i>🛡️</i>
+                <strong>Risk Management &amp; Security</strong>
+                <p>Theft prevention, advanced fire detection, and geofencing alerts.</p>
+            </div>
+        </div>
+        <div class="about-why">
+            <h2>Why Choose EcoChain?</h2>
+            <ul>
+                <li><strong>Sustainability-Driven:</strong> Lower environmental impact through eco-conscious logistics.</li>
+                <li><strong>Blockchain-Powered Transparency:</strong> Immutable, secure supply chain tracking.</li>
+                <li><strong>Future-Ready Innovation:</strong> AI &amp; IoT integration for smarter warehouse management.</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <a href="#">GitHub</a>
+        <a href="#">Documentation</a>
+        <a href="#">Contact Us</a>
+        <div class="social-icons">
+            <!-- Social media icons here -->
+        </div>
+        <p>&copy; 2025 EcoChain. All rights reserved.</p>
+    </footer>
+</body>
+</html> 

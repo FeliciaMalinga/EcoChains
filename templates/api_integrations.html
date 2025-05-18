@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoChain - API Integrations</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="EcoChain Logo" class="logo-img">
+                <span class="logo-text">EcoChain</span>
+            </div>
+            <nav class="main-nav">
+                <a href="/">Home</a>
+                <a href="/wallet">Wallet</a>
+                <a href="/transactions">Transactions</a>
+                <a href="/smart_contracts">Smart Contracts</a>
+                <a href="/api_integrations" class="active">API Integrations</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="api-integrations">
+            <h2>API & Oracle Integrations</h2>
+            <button>Connect External API</button>
+            <button>Connect Oracle</button>
+            <div class="real-time-data">
+                <h3>Real-Time Data</h3>
+                <p>Data from IoT Devices: <span id="iot-data">No data available.</span></p>
+            </div>
+            <div class="webhooks">
+                <h3>Configure Webhooks</h3>
+                <button>Add Webhook</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="#">GitHub</a>
+        <a href="#">Documentation</a>
+        <a href="#">Contact Us</a>
+    </footer>
+</body>
+</html> 

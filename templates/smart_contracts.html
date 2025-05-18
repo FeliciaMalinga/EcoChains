@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoChain - Smart Contracts</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <header class="main-header">
+        <div class="header-container">
+            <div class="logo">
+                <img src="{{ url_for('static', filename='images/logo.png') }}" alt="EcoChain Logo" class="logo-img">
+                <span class="logo-text">EcoChain</span>
+            </div>
+            <nav class="main-nav">
+                <a href="/">Home</a>
+                <a href="/wallet">Wallet</a>
+                <a href="/transactions">Transactions</a>
+                <a href="/smart_contracts" class="active">Smart Contracts</a>
+                <a href="/api_integrations">API Integrations</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="smart-contracts">
+            <h2>Smart Contracts Dashboard</h2>
+            <button>Deploy New Contract</button>
+            <button>Execute Function</button>
+            <div class="contract-details">
+                <h3>Contract Details</h3>
+                <p>Contract Address: <span id="contract-address">0x...</span></p>
+                <p>Contract Logs: <span id="contract-logs">No logs available.</span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <a href="#">GitHub</a>
+        <a href="#">Documentation</a>
+        <a href="#">Contact Us</a>
+    </footer>
+</body>
+</html> 
